@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "next start -p $PORT",
+    "start": "npm run build && npm run start",
     "start:dev": "nodemon server.js"
   },
   "author": "",
