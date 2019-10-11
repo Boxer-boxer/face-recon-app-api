@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "next start -p $PORT",
     "start:dev": "nodemon server.js"
   },
   "author": "",
@@ -23,3 +23,6 @@
     "nodemon": "^1.19.3"
   }
 }
+
+
+/*node server.js*/
