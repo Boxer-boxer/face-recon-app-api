@@ -22,7 +22,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors())
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
 	console.log(`Server is Running on ${PORT}`)	
@@ -30,7 +30,8 @@ app.listen(PORT, () => {
 
 
 app.get('/', (req, res) => {
-	res.send(database.users)
+	res.send('its working!')
+	/*res.send(database.users)*/
 })
 
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)} )
