@@ -24,7 +24,7 @@ app.use(cors())
 
 const PORT = process.env.PORT
 
-app.listen(process.env.PORT || 80, () => {
+app.listen(process.env.PORT || 3000, () => {
 	console.log(`Server is Running on ${process.env.PORT}`)	
 	})
 
